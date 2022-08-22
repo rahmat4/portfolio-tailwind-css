@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>portfolio tailwind</title>
 	<link rel="stylesheet" href="dist/output.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
 </head>
 <body>
 	<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
@@ -52,9 +53,9 @@
 		<div class="container mx-auto">
 			<div class="flex flex-wrap xl:px-20 lg:px-4">
 				<div class="w-full self-center px-4 lg:w-1/2">
-					<h1 class="text-base font-semibold text-primary md:text-xl">Halo semua, saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Rahmat Pratama</span></h1>
-					<h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Web Developer</h2>
-					<p class="font-medium text-secondary mb-10">Belajar web progamming itu mudah dan menyenangkan bukan. <span class="text-dark font-semibold">bukan!</span></p>
+					<h1 class="text-base font-semibold text-primary md:text-xl">Halo semua, saya<span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Rahmat Pratama</span></h1>
+					<h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl mt-3"><span id="typed"></span></h2>
+					<p class="font-medium text-secondary mb-10"><span id="typed1"></span></p>
 					<a href="#" class="text-base font-semibold text-white bg-primary px-8 py-3 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
 				</div>
 				<div class="w-full self-end px-4 lg:w-1/2">
@@ -138,14 +139,14 @@
 					<a href="#" class="max-w-[150px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
 						<img src="img/clients/Google-Logo.wine (1).svg" alt="google">
 					</a>
-					<a href="#" class="max-w-[150px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-						<img src="img/clients/Google-Logo.wine (1).svg" alt="facebook">
+					<a href="#" class="max-w-[150px] mx-4 py-12 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+						<img src="img/clients/Gojek_logo_2019.svg.png" alt="gojek">
 					</a>
-					<a href="#" class="max-w-[150px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-						<img src="img/clients/Google-Logo.wine (1).svg" alt="ibm">
+					<a href="#" class="max-w-[150px] mx-4 -mt-5 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+						<img src="img/clients/traveloka-logo-brandlogo.net_.png" alt="traveloka">
 					</a>
-					<a href="#" class="max-w-[150px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-						<img src="img/clients/Google-Logo.wine (1).svg" alt="michrosoft">
+					<a href="#" class="max-w-[150px] mx-4 py-9 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+						<img src="img/clients/Tokopedia.svg.png" alt="tokopedia">
 					</a>
 				</div>
 			</div>
@@ -284,5 +285,19 @@
 
 
 	<script src="./dist/js/script.js"></script>
+	<script>
+		new Typed('#typed',{
+			strings : ['Web Developer'],
+			typeSpeed : 60,
+			delaySpeed: 90,
+			loop : true
+		});
+		new Typed('#typed1',{
+			strings : ['Belajar web progamming itu mudah dan menyenangkan bukan.'],
+			typeSpeed : 60,
+			delaySpeed: 90,
+			loop : true
+		});
+	  </script>
 </body>
 </html>
